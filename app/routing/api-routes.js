@@ -27,7 +27,7 @@ module.exports = function(app) {
           console.log(friendsData[i].name);
           totalDifference = 0
         
-        for(var j = 0; j < 10; j++){
+        for(var j = 0; j < friendsData[i].scores[j]; j++){
           // We calculate the difference between the scores and sum them into the totalDifference
           totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friendsData[i].scores[j]));
           // If the sum of differences is less then the differences of the current "best match"
@@ -41,7 +41,7 @@ module.exports = function(app) {
         }
       }
   
-      friends.push(userData);
+      friendsData.push(userData);
    
   res.json(friendMatch);
     

@@ -48,7 +48,7 @@ var friends = [
         ]
     },
     {
-        name: "Kelan",
+        name: "John",
         image: "https://upload.wikimedia.org/wikipedia/en/6/6f/DSRevan.jpg",
         scores: [
             3, 
